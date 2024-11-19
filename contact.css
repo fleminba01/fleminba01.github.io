@@ -1,0 +1,58 @@
+form.form-example {
+    display: table;
+  }
+  
+  div.form-example {
+    display: table-row;
+  }
+  
+  label,
+  input, textarea {
+    display: table-cell;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    padding-right: 10px;
+  }
+
+  .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f2d753;
+}
+
+.nav1 a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav1 a:hover {
+    background-color: #f4b35d;
+  }
+
+.nav1 {
+    display: inline;
+    border-right: 1px solid #bbb;
+    float: left;
+}
+
+.nav1:last-child {
+    border-right: none;
+  }
+
+  .form-example {
+    float: left;
+    width: 50%;
+  }
+
+  .row:after {
+  content: "";
+  display: flex;
+  clear: both;
+}

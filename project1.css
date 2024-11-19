@@ -1,0 +1,108 @@
+.logo {
+    width: 15vh
+}
+
+.map{
+    float: right;
+    width: 8vh;
+}
+
+/* .header {
+    border: 2px dotted;
+} */
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+.todo {
+    border: 2px solid;
+    background-color: aquamarine;
+    display: inline flex;
+    align-items: baseline;
+}
+
+
+.park {
+    
+    width: 50%;
+}
+
+.beach {
+    width: 50%;
+}
+
+#cp {
+    align-self: baseline;
+}
+
+#cab, #cp {
+    width: 50vh;
+}
+
+figcaption {
+    font-size: small;
+}
+
+table {
+    table-layout: fixed;
+    width: 40%;
+    border-collapse: collapse;
+    border: 2px solid purple;
+  }
+
+  th,td {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+thead, tfoot {
+    background-color: greenyellow;
+}
+
+thead {
+    text-align: justify;
+}
+
+.icon {
+ width: 10%;
+}
+
+.contact {
+    display: inline flex;
+    align-items: flex-start;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f2d753;
+}
+
+.nav1 a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav1 a:hover {
+    background-color: #f4b35d;
+  }
+
+.nav1 {
+    display: inline;
+    border-right: 1px solid #bbb;
+    float: left;
+}
+
+.nav1:last-child {
+    border-right: none;
+  }
+
