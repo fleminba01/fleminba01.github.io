@@ -8,49 +8,59 @@
     <script defer src="../static/script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Job Application Tracker</h1>
-    </header>
+     <header>
+            <h1 class="animated-title">Job Application Tracker</h1>
+        </header>
+    
+        <main>
+            <section id="add-application">
+                <h2>Add New Application</h2>
+                <form id="application-form">
+                    <label for="job-title">Job Title:</label>
+                    <input type="text" id="job-title" name="jobTitle" required>
+                
+                    <label for="company">Company:</label>
+                    <input type="text" id="company" name="company" required>
+                
+                    <label for="job-description">Job Description:</label>
+                    <textarea id="job-description" name="jobDescription" rows="3"></textarea>
+                
+                    <label for="notes">Notes:</label>
+                    <textarea id="notes" name="notes" rows="3"></textarea>
+                
+                    <label for="status">Status:</label>
+                    <select id="status" name="status">
+                        <option value="applied">Applied</option>
+                        <option value="interview">Interview</option>
+                        <option value="offer">Offer</option>
+                        <option value="rejected">Rejected</option>
+                    </select>
+                
+                    <button type="submit">Add Application</button>
+                </form>
+                
+            </section>
+    
+            <section id="applications-list">
+                <h2>Your Applications</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Job Title</th>
+                            <th>Company</th>
+                            <th>Description</th>
+                            <th>Notes</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="applications-table-body">
+                        <!-- Applications will be dynamically added here -->
+                    </tbody>
+                </table>
+            </section>
+        </main>    
 
-    <main>
-        <section id="add-application">
-            <h2>Add New Application</h2>
-            <form id="application-form">
-                <label for="job-title">Job Title:</label>
-                <input type="text" id="job-title" name="jobTitle" required>
-
-                <label for="company">Company:</label>
-                <input type="text" id="company" name="company" required>
-
-                <label for="status">Status:</label>
-                <select id="status" name="status">
-                    <option value="applied">Applied</option>
-                    <option value="interview">Interview</option>
-                    <option value="offer">Offer</option>
-                    <option value="rejected">Rejected</option>
-                </select>
-
-                <button type="submit">Add Application</button>
-            </form>
-        </section>
-
-        <section id="applications-list">
-            <h2>Your Applications</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Job Title</th>
-                        <th>Company</th>
-                        <th>Status</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody id="applications-table-body">
-                    <!-- Applications will be dynamically added here -->
-                </tbody>
-            </table>
-        </section>
-    </main>
 
     <footer>
         <p>&copy; 2024 Job Application Tracker - Final Project - Briana Fleming</p>
